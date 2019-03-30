@@ -11,6 +11,6 @@ public class NumeralesTest {
 
     @Test
     public void numeralesSolosTest() {
-        
+
     }
 }
