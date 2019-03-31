@@ -7,16 +7,23 @@ public enum NumerosRomanos {
     III (3),
     IV (4),
     V (5),
-    VI (6),
-    VII (7),
-    VIII (8),
     IX (9),
-    XXXII (32),
-    XLV (45);
+    X (10),
+    XL (40),
+    L (50),
+    XC (90),
+    C (100),
+    CM (900),
+    M (1000);
 
-    private int valor = 0;
+    private int valorDecimal = 0;
 
-    NumerosRomanos(int valor) {
-        this.valor = valor;
+    NumerosRomanos(int valorDecimal) {
+        this.valorDecimal = valorDecimal;
     }
+
+    public int getValorDecimal() {
+        return valorDecimal;
+    }
+
 }
