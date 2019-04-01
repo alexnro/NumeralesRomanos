@@ -18,12 +18,15 @@ public enum NumerosRomanos {
 
     private int valorDecimal = 0;
 
+    NumerosRomanos() {
+    }
+
     NumerosRomanos(int valorDecimal) {
         this.valorDecimal = valorDecimal;
     }
 
     public int getValorDecimal() {
-        return valorDecimal;
+        return this.valorDecimal;
     }
 
 }
