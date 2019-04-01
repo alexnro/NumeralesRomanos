@@ -37,4 +37,15 @@ public class ConversorADecimal {
             return false;
         }
     }
+
+    public int calcularGrupoSumatorio(String numeroRomano) {
+        for (NumerosRomanos numerosRomanos : NumerosRomanos.getGrupoSumatorio()) {
+            if (numeroRomano.contains(numerosRomanos.name())) {
+                valorTotal += numerosRomanos.getValorDecimal();
+            } else {
+
+            }
+        }
+        return valorTotal;
+    }
 }

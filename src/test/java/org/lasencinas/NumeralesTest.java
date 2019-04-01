@@ -39,4 +39,11 @@ public class NumeralesTest {
         assertTrue(conversor.comprobarNumeroRomano());
     }
 
+    @Test
+    public void grupoSumatorioTest() {
+        ConversorADecimal conversor = new ConversorADecimal();
+        assertEquals(6, conversor.calcularGrupoSumatorio("VI"));
+        conversor = new ConversorADecimal();
+        assertEquals(13, conversor.calcularGrupoSumatorio("XIII"));
+    }
 }
