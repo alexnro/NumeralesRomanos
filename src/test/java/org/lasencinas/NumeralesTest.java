@@ -29,9 +29,14 @@ public class NumeralesTest {
     public void comprobarNumeroRomano() {
         ConversorADecimal conversor = new ConversorADecimal("XIII");
         assertTrue(conversor.comprobarNumeroRomano());
-
-        conversor = new ConversorADecimal("VVV");
+        conversor.setNumeroRomano("VVV");
         assertFalse(conversor.comprobarNumeroRomano());
+        conversor.setNumeroRomano("IIII");
+        assertFalse(conversor.comprobarNumeroRomano());
+        conversor.setNumeroRomano("CCM");
+        assertFalse(conversor.comprobarNumeroRomano());
+        conversor.setNumeroRomano("CMXIV");
+        assertTrue(conversor.comprobarNumeroRomano());
     }
 
 }

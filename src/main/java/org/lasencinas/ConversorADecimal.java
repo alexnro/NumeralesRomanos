@@ -15,6 +15,10 @@ public class ConversorADecimal {
         this.numeroRomano = numeroRomano;
     }
 
+    public void setNumeroRomano(String numeroRomano) {
+        this.numeroRomano = numeroRomano;
+    }
+
     public String getNumeroRomano() {
         return this.numeroRomano;
     }
