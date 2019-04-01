@@ -34,7 +34,7 @@ public enum NumerosRomanos {
         return EnumSet.range(I, M);
     }
 
-    public EnumSet<NumerosRomanos> getGruopSubstractivo() {
+    public EnumSet<NumerosRomanos> getGrupoSubstractivo() {
         return EnumSet.complementOf(getGrupoSumatorio());
     }
 }
