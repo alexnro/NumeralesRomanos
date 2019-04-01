@@ -1,6 +1,6 @@
 package org.lasencinas;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.lasencinas.NumerosRomanos.*;
 
 import org.junit.Test;
@@ -11,8 +11,6 @@ public class NumeralesTest {
     @Test
     public void numeralesSolosTest() {
         assertEquals(1, I.getValorDecimal());
-        assertEquals(2, II.getValorDecimal());
-        assertEquals(3, III.getValorDecimal());
         assertEquals(4, IV.getValorDecimal());
         assertEquals(5, V.getValorDecimal());
         assertEquals(9, IX.getValorDecimal());
@@ -26,4 +24,14 @@ public class NumeralesTest {
         assertEquals(900, CM.getValorDecimal());
         assertEquals(1000, M.getValorDecimal());
     }
+
+    @Test
+    public void comprobarNumeroRomano() {
+        ConversorADecimal conversor = new ConversorADecimal("XIII");
+        assertTrue(conversor.comprobarNumeroRomano());
+
+        conversor = new ConversorADecimal("VVV");
+        assertFalse(conversor.comprobarNumeroRomano());
+    }
+
 }

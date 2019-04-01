@@ -5,8 +5,6 @@ import java.util.EnumSet;
 public enum NumerosRomanos {
 
     I (1),
-    II (2),
-    III (3),
     V (5),
     X ( 10),
     L (50),
@@ -30,11 +28,11 @@ public enum NumerosRomanos {
         return this.valorDecimal;
     }
 
-    public EnumSet<NumerosRomanos> getGrupoSumatorio() {
+    public static EnumSet<NumerosRomanos> getGrupoSumatorio() {
         return EnumSet.range(I, M);
     }
 
-    public EnumSet<NumerosRomanos> getGrupoSubstractivo() {
+    public static EnumSet<NumerosRomanos> getGrupoSubstractivo() {
         return EnumSet.complementOf(getGrupoSumatorio());
     }
 }
