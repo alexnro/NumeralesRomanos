@@ -29,4 +29,12 @@ public enum NumerosRomanos {
     public int getValorDecimal() {
         return this.valorDecimal;
     }
+
+    public EnumSet<NumerosRomanos> getGrupoSumatorio() {
+        return EnumSet.range(I, M);
+    }
+
+    public EnumSet<NumerosRomanos> getGruopSubstractivo() {
+        return EnumSet.complementOf(getGrupoSumatorio());
+    }
 }
