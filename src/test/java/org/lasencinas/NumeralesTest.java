@@ -21,6 +21,8 @@ public class NumeralesTest {
         assertEquals(50, L.getValorDecimal());
         assertEquals(90, XC.getValorDecimal());
         assertEquals(100, C.getValorDecimal());
+        assertEquals(400, CD.getValorDecimal());
+        assertEquals(500, D.getValorDecimal());
         assertEquals(900, CM.getValorDecimal());
         assertEquals(1000, M.getValorDecimal());
     }
